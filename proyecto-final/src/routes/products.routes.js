@@ -5,10 +5,10 @@ import {getAllProducts,getProductById,createProduct,deleteProduct} from '../cont
 
 const router = express.Router();
 
-// Ruta protegida: obtener todos los productos
+// Ruta no protegida: obtener todos los productos
 router.get('/', getAllProducts);
 
-// Ruta protegida: obtener un producto por ID
+// Ruta no protegida: obtener un producto por ID
 router.get('/:id', getProductById);
 
 
